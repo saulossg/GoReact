@@ -2,10 +2,14 @@
   "name": "modulo01",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --mode development"
+  },
   "license": "MIT",
   "dependencies": {
     "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "react-dom": "^16.7.0",
+    "webpack-dev-server": "^3.1.14"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
