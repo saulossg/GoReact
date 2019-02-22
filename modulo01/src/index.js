@@ -12,6 +12,21 @@ class App extends React.Component {
     counter: 0
   };
 
+  componenDidMount() {
+    console.log("Inicializando o componente");
+    this.setState({ counter: this.state.counter + 1 });
+  }
+
+  componentWillMount() {
+    console.log("Destruindo o componente");
+  }
+
+  shouldComponentUpdate(nextProps, nextState) {
+    return nextState.counter <= 10;
+  }
+
+  componentDidUpdate(prevProps, prevState) {}
+
   handleClick() {
     alert("Botão clicado...");
   }
